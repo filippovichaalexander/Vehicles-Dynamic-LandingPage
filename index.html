@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mercedes Benz</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="./dist/main.js" defer></script>
+	<!-- <script src="./js/accordion.js" defer></script>
+	<script src="./js/smoothScroll.js" defer></script>
+	<script src="./js/tabs.js" defer></script>
+	<script src="./js/modal.js" defer></script>
+	<script src="./js/burger.js" defer></script>
+	<script src="./js/sendForm.js" defer></script> -->
+</head>
+
+<body>
+	<!-- header (start) -->
+	<header class="header">
+		<div class="container">
+			<div class="header-wrapper">
+				<div class="header-main">
+					<a href="#main" class="logo header__logo">
+						<img src="img/logo.svg" alt="Logo: A 200" class="logo__img">
+					</a>
+					<!-- /.logo -->
+					<nav class="menu">
+						<ul class="menu-list">
+							<li class="menu-list__item">
+								<a href="#design" class="menu-list__link">
+									Design
+								</a>
+							</li>
+							<li class="menu-list__item">
+								<a href="#feature" class="menu-list__link">
+									Characteristics
+								</a>
+							</li>
+							<li class="menu-list__item">
+								<a href="#main" class="menu-list__link">
+									Dealer Platform
+								</a>
+							</li>
+							<li class="menu-list__item">
+								<a href="#contacts" class="menu-list__link">
+									Test Drive
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- /.menu -->
+				</div>
+				<!-- /.header-main -->
+				<a href="tel:88005437809" class="phone">
+					+44 800 543 78 09
+				</a>
+				<button class="humburger-menu" aria-label="Бургер меню">
+				</button>
+			</div>
+			<!-- /.header-wrapper -->
+		</div>
+	</header>
+	<!-- header (end) -->
+
+	<!-- main (start) -->
+	<section class="main" id="main">
+		<div class="container">
+			<div class="main-wrapper">
+				<div class="offer">
+					<h1 class="main__title">A 200 Saloon</h1>
+					<p class="main__descr">Striking appearance
+						and&nbsp;impressive functionality</p>
+					<a href="#contacts" type="button" class="button main__button">
+						Test Drive
+					</a>
+					<a href="#design" class="main__scroll" aria-label="Next view"></a>
+
+				</div>
+				<!-- /.offer -->
+				<div class="main-img">
+					<a href="https://www.youtube.com/watch?v=w7doL2EpxX0" class="play">
+
+						Watch video
+					</a>
+
+				</div>
+			</div>
+			<!-- /.main-wrapper -->
+		</div>
+	</section>
+	<!-- main (end) -->
+
+	<!-- design (start) -->
+	<section class="section design" id="design">
+		<div class="container">
+			<div class="design-wrapper">
+				<div class="design-block">
+					<img src="img/car/image-5.png" alt="A 200" class="feature__img design-block__img"
+						data-tabs-field="interior">
+					<img src="img/car/image-4.png" alt="A 200" class="feature__img design-block__img hidden"
+						data-tabs-field="body">
+					<div class="design-text">
+						<h2 class="section__title design__title" data-tabs-field="interior">
+							Comfort in details
+						</h2>
+						<h2 class="section__title design__title hidden" data-tabs-field="body">
+
+							Eye-catching
+						</h2>
+						<ul class="design-list">
+							<li>
+								<button type="button" class="design-list__item design-list__item_active"
+									data-tabs-handler="interior" data-some-attr="attr">Interior Design</button>
+							</li>
+							<li>
+								<button type="button" class="design-list__item" data-tabs-handler="body">Exterior
+									Design</button>
+							</li>
+						</ul>
+						<!-- /.design-list -->
+						<ul>
+							<li class="design__descr" data-tabs-field="interior">
+								<p class="design__description-text">
+									Whether it's rush hour, a long night drive or an unfamiliar road, your new A-Class
+									the sedan will significantly relieve you of the load, especially in stressful
+									situations. The time that
+									you spend behind the wheel of a car should not go wasted. It's time for
+									recuperation. The car will safely and comfortably take you to your destination.
+								</p>
+								<button class="more">
+									— Read more
+								</button>
+							</li>
+							<li class="design__descr hidden" data-tabs-field="body">
+								<p class="design__description-text">
+									Thanks to its long rear end, the new A-Class Sedan has even better
+									aerodynamic performance than the A-Class Hatchback (Cd from 0.25). With indicator
+									0.22 the new sedan model caught up with the world record for the CLA Coupe. A-Class
+									Sedan
+									has the lowest aerodynamic drag among all production vehicles in
+									the world.
+								</p>
+								<button class="more">
+									— Read more
+								</button>
+							</li>
+						</ul>
+					</div>
+					<!-- /.design-text -->
+				</div>
+				<!-- /.design-block -->
+				<ul>
+					<li class="design-images" data-tabs-field="interior">
+						<img src="img/design/interior01.jpg" alt="A 200" class="design__img">
+						<img src="img/design/interior02.jpg" alt="A 200" class="design__img">
+						<img src="img/design/interior03.jpg" alt="A 200" class="design__img">
+						<img src="img/design/interior04.jpg" alt="A 200" class="design__img">
+					</li>
+					<li class="design-images hidden" data-tabs-field="body">
+						<img src="img/design/body01.jpg" alt="A 200" class="design__img">
+						<img src="img/design/body02.jpg" alt="A 200" class="design__img">
+						<img src="img/design/body03.jpg" alt="A 200" class="design__img">
+						<img src="img/design/body04.jpg" alt="A 200" class="design__img">
+					</li>
+				</ul>
+			</div>
+			<!-- /.design-wrapper -->
+		</div>
+	</section>
+	<!-- design (end) -->
+
+	<!-- feature (start) -->
+	<section class="section feature" id="feature">
+		<div class="container">
+			<div class="feature-wrapper">
+				<div class="feature-block">
+					<h2 class="section__title feature__title">
+						Technical Characteristics
+					</h2>
+					<ul class="feature-list">
+						<li class="feature__item">
+							<button type="button" class="feature__link feature__link_active">
+								<div class="feature-item-wrap">
+									<span class="feature-item__title">
+										Specification
+									</span>
+								</div>
+							</button>
+							<!-- /.feature__link -->
+							<ul class="feature-sub">
+								<li class="feature-sub__item">
+									<span class="feature-sub__name">
+										Car drive
+									</span>
+									<span class="feature-sub__value">
+										Front
+									</span>
+								</li>
+								<li class="feature-sub__item">
+									<span class="feature-sub__name">
+										Acceleration to 100 km / h, sec
+									</span>
+									<span class="feature-sub__value">
+										8.1
+									</span>
+								</li>
+								<li class="feature-sub__item">
+									<span class="feature-sub__name">
+										Transmition
+									</span>
+									<span class="feature-sub__value">
+										7G-DCT
+									</span>
+								</li>
+							</ul>
+							<!-- /.feature-list-sub -->
+						</li>
+						<li class="feature__item">
+							<button type="button" class="feature__link">
+								<div class="feature-item-wrap">
+									<span class="feature-item__title">
+										Engine
+									</span>
+								</div>
+							</button>
+							<ul class="feature-sub hidden">
+								<li class="feature-sub__item">
+									<span class="feature-sub__name">
+										Engine
+									</span>
+									<span class="feature-sub__value">
+										1.332 liters / 163 h.p.
+									</span>
+								</li>
+								<li class="feature-sub__item">
+									<span class="feature-sub__name">
+										Engine type
+									</span>
+									<span class="feature-sub__value">
+
+										Petrol
+									</span>
+								</li>
+								<li class="feature-sub__item">
+									<span class="feature-sub__name">
+										Consumption, l / 100 km
+									</span>
+									<span class="feature-sub__value">
+										5.4
+									</span>
+								</li>
+							</ul>
+						</li>
+						<li class="feature__item">
+							<button type="button" class="feature__link">
+								<div class="feature-item-wrap">
+									<span class="feature-item__title">
+										Driving performance
+									</span>
+								</div>
+							</button>
+							<ul class="feature-sub hidden">
+								<li class="feature-sub__item">
+									<span class="feature-sub__name">
+										Emergency braking system
+									</span>
+									<span class="feature-sub__value">
+										+
+									</span>
+								</li>
+								<li class="feature-sub__item">
+									<span class="feature-sub__name">
+										Tire pressure monitoring system
+									</span>
+									<span class="feature-sub__value">
+										+
+									</span>
+								</li>
+								<li class="feature-sub__item">
+									<span class="feature-sub__name">
+										Emission control system EURO 6
+									</span>
+									<span class="feature-sub__value">
+										+
+									</span>
+								</li>
+								<li class="feature-sub__item">
+									<span class="feature-sub__name">
+										Pedestrian protection
+									</span>
+									<span class="feature-sub__value">
+										+
+									</span>
+								</li>
+							</ul>
+						</li>
+						<li class="feature__item">
+							<button type="button" class="feature__link">
+								<div class="feature-item-wrap">
+									<span class="feature-item__title">
+										Comfort
+									</span>
+								</div>
+							</button>
+							<ul class="feature-sub hidden">
+								<li class="feature-sub__item">
+									<span class="feature-sub__name">
+										Climate control
+									</span>
+									<span class="feature-sub__value">
+										+
+									</span>
+								</li>
+								<li class="feature-sub__item">
+									<span class="feature-sub__name">
+										On-board computer
+									</span>
+									<span class="feature-sub__value">
+										+
+									</span>
+								</li>
+								<li class="feature-sub__item">
+									<span class="feature-sub__name">
+										Light and rain sensor
+									</span>
+									<span class="feature-sub__value">
+										+
+									</span>
+								</li>
+								<li class="feature-sub__item">
+									<span class="feature-sub__name">
+										Стеклоочистители с датчиком дождя
+									</span>
+									<span class="feature-sub__value">
+										+
+									</span>
+								</li>
+								<li class="feature-sub__item">
+									<span class="feature-sub__name">
+										Rain sensing wipers
+									</span>
+									<span class="feature-sub__value">
+										+
+									</span>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!-- /.feature-list -->
+				</div>
+				<!-- /.feature-block -->
+			</div>
+			<!-- /.feature-wrapper -->
+		</div>
+	</section>
+	<!-- feature (end) -->
+
+	<!-- contacts (start) -->
+	<section class="section contacts" id="contacts">
+		<div class="container">
+			<div class="contacts-wrapper">
+				<div class="contacts-form">
+					<h2 class="section__title">
+						Test drive application
+					</h2>
+					<p class="contacts__descr">
+						Leave your contacts. We will contact
+						you and invite you for a test drive in
+						convient time for you
+					</p>
+					<form class="form form-test-drive">
+						<input type="text" class="input" name="name" placeholder="Name">
+						<input type="mail" class="input" name="mail" placeholder="Email">
+						<input type="text" class="input" name="phone" placeholder="Phone">
+						<button type="submit" class="button form__button">
+							Send
+						</button>
+					</form>
+				</div>
+				<!-- /.contacts-form -->
+			</div>
+			<!-- /.contacts-wrapper -->
+		</div>
+	</section>
+	<!-- contacts (end) -->
+
+	<!-- modal (start) -->
+	<div class="modal hidden">
+		<div class="overlay"></div>
+		<div class="modal-wrapper">
+			<h2 class="section__title modal__title">
+				Detailed description
+				complete sets
+			</h2>
+			<p class="modal__descr">
+				Leave your email address on
+				which you want to get the document with
+				description of complete sets
+			</p>
+			<button type="button" class="modal__close" aria-label="закрыть модальное окно">
+			</button>
+			<form class="form modal__form">
+				<input type="text" name="name" class="input modal__input" placeholder="Name">
+				<input type="mail" name="mail" class="input modal__input" placeholder="Email">
+				<div class="modal-buttons">
+					<button type="submit" class="button modal__button">
+						Send
+					</button>
+				</div>
+			</form>
+			<!-- /.form modal__form -->
+		</div>
+	</div>
+	<!-- modal (end) -->
+</body>
+
+</html>
